@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio von Jens Goldbach: KI-gest&uuml;tzte Bild- und Videoproduktion, vier Case Studies.">
+<meta name="description" content="Portfolio von Jens Goldbach: KI-gest&uuml;tzte Bild- und Videoproduktion, f&uuml;nf Case Studies.">
 <meta property="og:title" content="Jens Goldbach · Portfolio">
-<meta property="og:description" content="KI-gest&uuml;tzte Bild- und Videoproduktion mit Bandbreite, mehrsprachig gedacht. Vier Case Studies.">
+<meta property="og:description" content="KI-gest&uuml;tzte Bild- und Videoproduktion mit Bandbreite, mehrsprachig gedacht. F&uuml;nf Case Studies.">
 <meta property="og:image" content="https://jensgoldbach.de/images/jens-goldbach-avatar.webp">
 <meta property="og:url" content="https://jensgoldbach.de/">
 <meta property="og:type" content="website">
@@ -24,39 +24,28 @@
   @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/inter-latin-400-normal.woff2') format('woff2')}
   @font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/inter-latin-500-normal.woff2') format('woff2')}
   @font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/inter-latin-600-normal.woff2') format('woff2')}
-
-  :root{
-    --paper:#f5f3ee;
-    --stone:#e8e6e1;
-    --stone-deep:#d8d5cd;
-    --ink:#211f1b;
-    --ink-soft:#4a4640;
-    --muted:#8a8478;
-    --line:#cfccc3;
-    --hair:#dcd9d1;
-    --maxw:1200px;
-  }
+  :root{--paper:#f5f3ee;--stone:#e8e6e1;--stone-deep:#d8d5cd;--ink:#211f1b;--ink-soft:#4a4640;--muted:#8a8478;--line:#cfccc3;--hair:#dcd9d1;--maxw:1200px}
+  html{scroll-behavior:smooth}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px}
   h1,h2{font-family:'Fraunces',Georgia,serif;font-weight:400;letter-spacing:-0.01em;line-height:1.08}
-  .eyebrow{font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);font-weight:500}
+  .eyebrow{font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);font-weight:500;font-family:'Inter',sans-serif}
   a{color:inherit}
-
+  .case-card.juanita{--case-accent:#b3382c}
+  .case-card.baeckerei{--case-accent:#8f5a2e}
   @media (prefers-reduced-motion:no-preference){
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}
     .reveal.in{opacity:1;transform:none}
   }
-
   /* HERO */
   .hero{padding:112px 0 88px}
   .hero h1{font-size:clamp(2.6rem,5.4vw,4.4rem);font-weight:300;max-width:16ch}
   .hero .sub{margin-top:24px;font-size:1.15rem;color:var(--ink-soft);max-width:46ch;line-height:1.55}
-
   /* CASE GRID */
   .cases{padding-bottom:96px}
-  .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
-  .case-card{display:block;text-decoration:none;color:inherit;background:var(--stone);border:1px solid var(--hair);overflow:hidden;transition:border-color .25s ease,transform .25s ease}
+  .case-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:32px}
+  .case-card{display:block;text-decoration:none;color:inherit;background:var(--stone);border:1px solid var(--hair);overflow:hidden;transition:border-color .25s ease,transform .25s ease;flex:0 0 calc((100% - 64px) / 3)}
   .case-card:hover{transform:translateY(-4px)}
   .case-card .thumb{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--stone-deep)}
   .case-card .thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
@@ -65,13 +54,11 @@
   .case-card:hover .accent-bar{transform:scaleX(1)}
   .case-card .meta{padding:24px 26px 28px}
   .case-card .tag{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--case-accent, var(--muted));font-weight:600;margin-bottom:10px;display:block}
-  .case-card h2{font-size:1.5rem;margin-bottom:10px}
+  .case-card h2{font-size:1.4rem;margin-bottom:10px;line-height:1.15}
   .case-card p{font-size:0.92rem;color:var(--ink-soft)}
-
   .case-card.bsr{--case-accent:#d4620a}
   .case-card.gromzell{--case-accent:#6b4a9e}
   .case-card.neuromint{--case-accent:#4f7864}
-
   /* FOOTER / KONTAKT */
   .contact{padding:80px 0 96px;border-top:1px solid var(--hair)}
   .contact .inner{display:flex;align-items:center;gap:28px;max-width:640px}
@@ -80,7 +67,6 @@
   .contact .text p:first-child{font-family:'Fraunces',serif;font-size:1.1rem;margin-bottom:6px}
   .contact .text a{color:var(--ink);text-decoration-color:var(--line);font-size:0.98rem}
   .contact .text a:hover{text-decoration-color:var(--ink)}
-
   .colophon{padding:0 0 80px}
   .colophon .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;align-items:baseline}
   .colophon .name{font-family:'Fraunces',serif;font-size:1.15rem}
@@ -89,12 +75,16 @@
   .colophon .legal{display:flex;flex-wrap:wrap;gap:8px 24px;list-style:none;font-size:0.82rem}
   .colophon .legal a{color:var(--muted);text-decoration:none}
   .colophon .legal a:hover{color:var(--ink)}
-
   @media (max-width:900px){
     .wrap{padding:0 24px}
     .hero{padding:72px 0 56px}
-    .case-grid{grid-template-columns:1fr}
     .contact .inner{gap:20px}
+  }
+  @media (max-width:1000px){
+    .case-card{flex-basis:calc((100% - 32px) / 2)}
+  }
+  @media (max-width:640px){
+    .case-card{flex-basis:100%}
   }
 </style>
 </head>
@@ -136,6 +126,18 @@
         </div>
       </a>
 
+      <a class="case-card juanita reveal" href="Juanita_Case_Study.html">
+        <div class="thumb">
+          <img src="images/thumb-juanita.webp" alt="Juanita kniet im Dschungelgarten und betrachtet einen gro&szlig;en K&auml;fer auf ihrer Hand">
+          <div class="accent-bar"></div>
+        </div>
+        <div class="meta">
+          <span class="tag">Konzeptarbeit &middot; Video</span>
+          <h2>Juanita und die Welt der Insekten</h2>
+          <p>Pitch-Trailer f&uuml;r eine Serie: Eine &auml;ltere Frau findet ein Ei, aus dem ein K&auml;fer schl&uuml;pft. Ein eigener Look zwischen Studiofilm und CGI.</p>
+        </div>
+      </a>
+
       <a class="case-card neuromint reveal" href="Neuro_Mint_Case_Study.html">
         <div class="thumb">
           <img src="images/thumb-neuromint.webp" alt="Neuro-Mint-Dose auf Marmor, Frame aus dem fertigen Werbeclip">
@@ -148,14 +150,14 @@
         </div>
       </a>
 
-      <a class="case-card reveal" href="Baeckerei_Case_Study.html">
+      <a class="case-card baeckerei reveal" href="Baeckerei_Case_Study.html">
         <div class="thumb">
           <img src="images/thumb-baeckerei.webp" alt="Croissant, Kaffee und Orangensaft, Motiv aus der B&auml;ckerei-Bildserie">
           <div class="accent-bar"></div>
         </div>
         <div class="meta">
           <span class="tag">Konzeptarbeit &middot; Bildserie</span>
-          <h2>Die Moderne B&auml;ckerei</h2>
+          <h2>Die moderne B&auml;ckerei</h2>
           <p>KI-Bildserie f&uuml;r eine fiktive moderne B&auml;ckerei: vier Motive in Nahaufnahme statt ganzer R&auml;ume.</p>
         </div>
       </a>

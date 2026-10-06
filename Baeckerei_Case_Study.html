@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="KI-Bildserie für eine fiktive moderne Bäckerei: vier Motive in Nahaufnahme statt ganzer Räume, entwickelt aus einem strategischen Wechsel vom Raum zum Detail.">
-<meta property="og:title" content="Die Moderne Bäckerei · Case Study">
+<meta property="og:title" content="Die moderne Bäckerei · Case Study">
 <meta property="og:description" content="KI-Bildserie für eine fiktive moderne Bäckerei: vier Motive in Nahaufnahme statt ganzer Räume, entwickelt aus einem strategischen Wechsel vom Raum zum Detail.">
 <meta property="og:image" content="https://jensgoldbach.de/images/thumb-baeckerei.webp">
 <meta property="og:url" content="https://jensgoldbach.de/Baeckerei_Case_Study.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Jens Goldbach · Portfolio">
 <meta name="twitter:card" content="summary_large_image">
-<title>Die Moderne Bäckerei · Case Study · Jens Goldbach</title>
+<title>Die moderne Bäckerei · Case Study · Jens Goldbach</title>
 <style>
   @font-face{font-family:'Fraunces';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/fraunces-latin-300-normal.woff2') format('woff2')}
   @font-face{font-family:'Fraunces';font-style:italic;font-weight:300;font-display:swap;src:url('fonts/fraunces-latin-300-italic.woff2') format('woff2')}
@@ -24,142 +24,52 @@
   @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/inter-latin-400-normal.woff2') format('woff2')}
   @font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/inter-latin-500-normal.woff2') format('woff2')}
   @font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url('fonts/inter-latin-600-normal.woff2') format('woff2')}
-
-  :root{
-    --paper:#f5f3ee;
-    --stone:#e8e6e1;
-    --stone-deep:#d8d5cd;
-    --ink:#211f1b;
-    --ink-soft:#4a4640;
-    --muted:#8a8478;
-    --line:#cfccc3;
-    --hair:#dcd9d1;
-    --maxw:1200px;
-  }
+  :root{--paper:#f5f3ee;--stone:#e8e6e1;--stone-deep:#d8d5cd;--ink:#211f1b;--ink-soft:#4a4640;--muted:#8a8478;--line:#cfccc3;--hair:#dcd9d1;--maxw:1200px;--accent:#8f5a2e;--accent-light:#e8c9a0}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Inter',system-ui,sans-serif;
-    font-weight:400;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
-  }
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-weight:400;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px}
   .narrow{max-width:660px}
-
   /* Typography */
   h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;font-weight:400;letter-spacing:-0.01em;line-height:1.08}
-  .eyebrow{
-    font-family:'Inter',sans-serif;
-    font-size:0.75rem;
-    letter-spacing:0.16em;
-    text-transform:uppercase;
-    color:var(--muted);
-    font-weight:500;
-  }
-
+  .eyebrow{font-family:'Inter',sans-serif;font-size:0.75rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);font-weight:500}
   /* ---------- HERO ---------- */
-  .hero{
-    min-height:92vh;
-    display:grid;
-    grid-template-columns:1.05fr 0.95fr;
-    align-items:stretch;
-    border-bottom:1px solid var(--hair);
-  }
-  .hero-text{
-    padding:80px 64px 80px 0;
-    display:flex;flex-direction:column;justify-content:center;
-    max-width:640px;
-    margin-left:auto;
-  }
+  .hero{min-height:88vh;display:grid;grid-template-columns:1.05fr 0.95fr;align-items:stretch;border-bottom:1px solid var(--hair)}
+  .hero-text{padding:80px 64px 80px 0;display:flex;flex-direction:column;justify-content:center;max-width:640px;margin-left:auto}
   .hero-text .kicker{margin-bottom:32px}
-  .hero-text h1{
-    font-size:clamp(2.8rem,5.2vw,4.6rem);
-    font-weight:300;
-    margin-bottom:28px;
-  }
-  .hero-text h1 em{font-style:italic;font-weight:400}
-  .hero-lede{
-    font-size:1.22rem;
-    line-height:1.6;
-    color:var(--ink-soft);
-    max-width:30ch;
-  }
-  .hero-meta{
-    margin-top:48px;
-    padding-top:24px;
-    border-top:1px solid var(--line);
-    display:flex;
-    flex-wrap:wrap;
-    gap:28px 40px;
-  }
+  .hero-text h1{font-size:clamp(2.6rem,5vw,4.2rem);font-weight:300;margin-bottom:28px}
+  .hero-text h1 em{font-style:italic}
+  .hero-lede{font-size:1.2rem;line-height:1.6;color:var(--ink-soft);max-width:30ch}
+  .hero-meta{margin-top:44px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:26px 40px}
   .hero-meta div{min-width:0}
   .hero-meta dt{font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
   .hero-meta dd{font-size:0.95rem;color:var(--ink);font-weight:500}
-  .hero-img{
-    position:relative;
-    background:var(--stone);
-    overflow:hidden;
-  }
-  .hero-img img{
-    position:absolute;inset:0;
-    width:100%;height:100%;
-    object-fit:cover;
-    object-position:center 40%;
-  }
-
+  .hero-img{position:relative;background:var(--stone);overflow:hidden}
+  .hero-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
   /* ---------- KONZEPT-HINWEIS ---------- */
   .konzept-note{background:var(--stone);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-  .konzept-note .wrap{padding:22px 40px;display:flex;gap:14px;align-items:baseline;font-size:0.92rem;color:var(--ink-soft)}
-  .konzept-note .tag{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);font-weight:600;white-space:nowrap}
-
+  .konzept-note .wrap{padding:22px 40px;display:flex;gap:16px;align-items:baseline;font-size:0.92rem;color:var(--ink-soft);flex-wrap:wrap}
+  .konzept-note .tag{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);font-weight:600;white-space:nowrap}
   /* ---------- SECTION SCAFFOLD ---------- */
-  section{padding:110px 0}
+  section{padding:100px 0}
   .section-head{max-width:660px;margin-bottom:56px}
   .section-head .eyebrow{display:block;margin-bottom:20px}
-  .section-head h2{font-size:clamp(2rem,3.6vw,2.9rem);font-weight:300;margin-bottom:24px}
+  .section-head h2{font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:300;margin-bottom:22px}
   .section-head h2 em{font-style:italic}
   .section-head p{font-size:1.1rem;color:var(--ink-soft)}
   p + p{margin-top:1.1em}
-
   /* ---------- CHALLENGE (problem) ---------- */
   .challenge{background:var(--stone);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
-  .problem-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:64px;
-    align-items:start;
-  }
+  .problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
   .problem-grid .lead-para{font-size:1.15rem;color:var(--ink-soft)}
   .symptom-list{list-style:none;margin-top:8px}
-  .symptom-list li{
-    padding:20px 0;
-    border-top:1px solid var(--line);
-    display:grid;
-    grid-template-columns:auto 1fr;
-    gap:18px;
-    align-items:baseline;
-  }
+  .symptom-list li{padding:20px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:baseline}
   .symptom-list li:last-child{border-bottom:1px solid var(--line)}
-  .symptom-list .mark{
-    font-family:'Fraunces',serif;
-    font-size:1.05rem;
-    color:var(--muted);
-    font-style:italic;
-  }
+  .symptom-list .mark{font-family:'Fraunces',serif;font-size:1.05rem;color:var(--muted);font-style:italic}
   .symptom-list p{font-size:0.98rem;color:var(--ink)}
   .symptom-list strong{font-weight:600}
-
   /* ---------- PIVOT (before/after) ---------- */
-  .pivot-compare{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    border:1px solid var(--line);
-    margin-top:8px;
-  }
+  .pivot-compare{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);margin-top:8px}
   .pivot-col{padding:40px}
   .pivot-col:first-child{border-right:1px solid var(--line);color:var(--muted)}
   .pivot-col h3{font-size:1.02rem;font-family:'Inter',sans-serif;font-weight:600;letter-spacing:0.02em;margin-bottom:28px;text-transform:none}
@@ -170,7 +80,6 @@
   .pivot-row .plabel{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
   .pivot-row .pval{font-size:1rem}
   .pivot-col:last-child .pval{font-weight:500}
-
   /* ---------- REFERENCE ---------- */
   .reference{background:var(--stone);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
   .ref-grid{display:grid;grid-template-columns:0.85fr 1.15fr;gap:64px;align-items:center}
@@ -183,100 +92,58 @@
   .ref-split .take{color:var(--ink)}
   .ref-split .leave{color:var(--muted)}
   .ref-split ul{list-style:none;font-size:0.95rem;line-height:1.9}
-  .prompt-quote{
-    margin-top:36px;
-    font-family:'Fraunces',serif;
-    font-style:italic;
-    font-size:1.05rem;
-    color:var(--ink-soft);
-    line-height:1.6;
-    padding-left:24px;
-    border-left:2px solid var(--muted);
-  }
-
+  .prompt-quote{margin-top:36px;font-family:'Fraunces',serif;font-style:italic;font-size:1.05rem;color:var(--ink-soft);line-height:1.6;padding-left:24px;border-left:2px solid var(--muted)}
   /* ---------- SERIES (the 4 motifs) ---------- */
   .series-intro{max-width:640px;margin-bottom:72px}
-  .motif{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:0;
-    align-items:stretch;
-    border-top:1px solid var(--hair);
-  }
+  .motif{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;border-top:1px solid var(--hair)}
   .motif:last-child{border-bottom:1px solid var(--hair)}
   .motif-img{background:var(--stone);overflow:hidden;aspect-ratio:4/5}
   .motif-img img{width:100%;height:100%;object-fit:cover;display:block}
-  .motif-body{
-    padding:56px 64px;
-    display:flex;flex-direction:column;justify-content:center;
-  }
+  .motif-body{padding:56px 64px;display:flex;flex-direction:column;justify-content:center}
   .motif:nth-child(even) .motif-img{order:2}
   .motif-num{font-family:'Fraunces',serif;font-size:0.95rem;color:var(--muted);font-style:italic;margin-bottom:16px;display:block}
   .motif-body h3{font-size:2rem;font-weight:300;margin-bottom:8px}
   .motif-focus{font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
   .motif-body p{font-size:1rem;color:var(--ink-soft);max-width:42ch}
-
   /* ---------- SYNTHESIS (the memorable moment) ---------- */
   .synthesis{background:var(--ink);color:var(--paper);padding:130px 0}
   .synthesis .eyebrow{color:#9a9284}
   .synth-inner{max-width:820px;margin:0 auto;text-align:center}
   .synth-inner .eyebrow{margin-bottom:36px}
-  .synth-statement{
-    font-family:'Fraunces',serif;
-    font-weight:300;
-    font-size:clamp(2.1rem,4.4vw,3.4rem);
-    line-height:1.22;
-    letter-spacing:-0.01em;
-    margin-bottom:40px;
-  }
+  .synth-statement{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.1rem,4.4vw,3.4rem);line-height:1.22;letter-spacing:-0.01em;margin-bottom:40px}
   .synth-statement em{font-style:italic;color:#e8c9a0}
-  .synth-inner .support{
-    font-size:1.1rem;
-    color:#bdb6a8;
-    max-width:52ch;
-    margin:0 auto;
-  }
-
+  .synth-inner .support{font-size:1.1rem;color:#bdb6a8;max-width:52ch;margin:0 auto}
   /* ---------- PRINCIPLES ---------- */
   .principles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 64px}
-  .principle{
-    padding:30px 0;
-    border-top:1px solid var(--line);
-    display:grid;
-    grid-template-columns:auto 1fr;
-    gap:24px;
-    align-items:baseline;
-  }
+  .principle{padding:30px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:baseline}
   .principle .pn{font-family:'Fraunces',serif;font-size:1.6rem;color:var(--muted);font-weight:300;line-height:1}
   .principle h3{font-size:1.08rem;font-family:'Inter',sans-serif;font-weight:600;margin-bottom:8px}
   .principle p{font-size:0.94rem;color:var(--ink-soft)}
-
   /* ---------- CONCLUSION ---------- */
-  .conclusion{background:var(--stone);border-top:1px solid var(--hair);text-align:center}
-  .conclusion .inner{max-width:720px;margin:0 auto}
-  .conclusion .eyebrow{display:block;margin-bottom:28px}
-  .conclusion h2{font-size:clamp(2rem,4vw,3rem);font-weight:300;margin-bottom:28px}
-  .conclusion h2 em{font-style:italic}
-  .conclusion p{font-size:1.15rem;color:var(--ink-soft)}
-
   /* ---------- COLOPHON ---------- */
-  .colophon{padding:64px 0 80px}
-  .colophon .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;align-items:baseline}
+  .colophon{padding:60px 0 80px}
+  .colophon .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:baseline}
   .colophon .name{font-family:'Fraunces',serif;font-size:1.15rem}
   .colophon .detail{font-size:0.85rem;color:var(--muted)}
   .colophon .legal-row{margin-top:20px;padding-top:20px;border-top:1px solid var(--hair)}
   .colophon .legal{display:flex;flex-wrap:wrap;gap:8px 24px;list-style:none;font-size:0.82rem}
   .colophon .legal a{color:var(--muted);text-decoration:none}
   .colophon .legal a:hover{color:var(--ink)}
-
   /* ---------- RESPONSIVE ---------- */
+  .haltung{background:var(--ink);color:var(--paper);padding:120px 0}
+  .haltung .eyebrow{color:#9a9284}
+  .haltung-inner{max-width:820px;margin:0 auto;text-align:center}
+  .haltung-inner .eyebrow{display:block;margin-bottom:32px}
+  .haltung-statement{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(1.9rem,4vw,3rem);line-height:1.26;margin-bottom:36px}
+  .haltung-statement em{font-style:italic;color:var(--accent-light)}
+  .haltung-inner .support{font-size:1.08rem;color:#bdb6a8;max-width:56ch;margin:0 auto}
   @media (max-width:900px){
     .wrap{padding:0 24px}
     .hero{grid-template-columns:1fr;min-height:auto}
-    .hero-text{padding:64px 0 56px;margin-left:0;max-width:none}
-    .hero-img{aspect-ratio:4/5;min-height:60vh}
+    .hero-text{padding:56px 0 40px;margin-left:0;max-width:none}
+    .hero-img{aspect-ratio:4/5;min-height:52vh}
     .hero-img img{position:relative}
-    section{padding:72px 0}
+    section{padding:64px 0}
     .problem-grid,.ref-grid{grid-template-columns:1fr;gap:40px}
     .pivot-compare{grid-template-columns:1fr}
     .pivot-col:first-child{border-right:none;border-bottom:1px solid var(--line)}
@@ -288,6 +155,7 @@
     .ref-split{grid-template-columns:1fr}
     .ref-split > div:last-child{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:24px}
     .synthesis{padding:88px 0}
+    .haltung{padding:80px 0}
   }
   @media (prefers-reduced-motion:no-preference){
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}
@@ -301,12 +169,12 @@
 <header class="hero">
   <div class="hero-text">
     <div class="kicker"><span class="eyebrow">Case Study · KI-Bildproduktion</span></div>
-    <h1>Die Moderne <em>Bäckerei</em></h1>
+    <h1>Die moderne <em>Bäckerei</em></h1>
     <p class="hero-lede">Wie eine ganze Bäckerei sichtbar wird, ohne dass ein einziger Raum gezeigt wird.</p>
     <dl class="hero-meta">
       <div><dt>Format</dt><dd>Social-Media-Bildserie</dd></div>
       <div><dt>Rolle</dt><dd>Konzept, Art Direction, Produktion</dd></div>
-      <div><dt>Werkzeug</dt><dd>Nano Banana 2</dd></div>
+      <div><dt>Werkzeuge</dt><dd>Nano Banana 2</dd></div>
     </dl>
   </div>
   <div class="hero-img">
@@ -384,7 +252,7 @@
 <section class="reference">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Das Referenz-Modell</span>
+      <span class="eyebrow">Die Referenz</span>
       <h2>Was das Referenzbild <em>darf</em> und was nicht</h2>
       <p>Das Referenzbild sollte nun eine andere, präzisere Aufgabe haben. Es steuert nur noch die Stimmung, nicht die Bildarchitektur.</p>
     </div>
@@ -409,7 +277,7 @@
             </ul>
           </div>
         </div>
-        <p class="prompt-quote">„Soft natural daylight, neutral tones, concrete texture, light wood, fabric. Focus on light, shadow and surface texture. No clear environment."</p>
+        <p class="prompt-quote">„Soft natural daylight, neutral tones, concrete texture, light wood, fabric. Focus on light, shadow and surface texture. No clear environment.“</p>
       </div>
     </div>
   </div>
@@ -431,7 +299,7 @@
         <span class="motif-num">Motiv 01</span>
         <h3>Die Herstellung</h3>
         <div class="motif-focus">Fokus auf Textur</div>
-        <p>Der Ursprung. Keine Backstube, keine Requisiten. Nur das Mehl und der Teig. Der Blick fällt einzig auf seine leicht unperfekte Oberfläche. Die Mehlspuren und die Tiefenunschärfe erzeugen einen Eindruck von authentischem Handwerk.</p>
+        <p>Der Ursprung. Keine Backstube, keine Requisiten. Nur das Mehl und der Teig. Der Blick fällt einzig auf seine unregelmäßige Oberfläche. Die Mehlspuren und die Tiefenunschärfe erzeugen einen Eindruck von authentischem Handwerk.</p>
       </div>
     </div>
     <div class="motif reveal">
@@ -440,7 +308,7 @@
         <span class="motif-num">Motiv 02</span>
         <h3>Der Mensch</h3>
         <div class="motif-focus">Fokus auf Handlung</div>
-        <p>Gesicht und Raum bleiben unsichtbar. Ich erzähle nur mit dem Bild der Hände beim Einpacken. Der enge Ausschnitt rückt diese alltägliche Geste in den Mittelpunkt und gibt dem Bild eine stille Intimität, die in einem weiten Raum unsichtbar geblieben wäre.</p>
+        <p>Gesicht und Raum bleiben unsichtbar. Ich erzähle nur mit dem Bild der Hände beim Einpacken. Der enge Ausschnitt rückt diese alltägliche Geste in den Mittelpunkt und gibt dem Bild eine stille Intimität, die in einem weiten Raum untergegangen wäre.</p>
       </div>
     </div>
     <div class="motif reveal">
@@ -449,7 +317,7 @@
         <span class="motif-num">Motiv 03</span>
         <h3>Das Produkt</h3>
         <div class="motif-focus">Fokus auf Genuss</div>
-        <p>Ein extremes Close-up mit natürlicher Variation. Kleine, gewollte Unregelmäßigkeiten brechen den künstlichen „KI-Look" auf und geben dem Gebäck fotografischen Realismus und Textur.</p>
+        <p>Ein extremes Close-up mit natürlicher Variation. Kleine, gewollte Unregelmäßigkeiten brechen den künstlichen „KI-Look“ auf und geben dem Gebäck fotografischen Realismus und Textur.</p>
       </div>
     </div>
     <div class="motif reveal">
@@ -491,13 +359,13 @@
   </div>
 </section>
 
-<!-- CONCLUSION -->
-<section class="conclusion">
+<!-- HALTUNG -->
+<section class="haltung">
   <div class="wrap">
-    <div class="inner reveal">
+    <div class="haltung-inner reveal">
       <span class="eyebrow">Meine Haltung</span>
-      <h2>Kuration schlägt <em>Konstruktion</em></h2>
-      <p>Ich glaube daran, dass man nicht immer alles auserzählen muss. Weniger ist manchmal mehr. Meine Arbeit liegt in der Entscheidung, was wegbleibt. Im Spiel mit Licht und Material und im Fokus auf die wenigen Details, die die ganze Geschichte tragen.</p>
+      <p class="haltung-statement">Kuration schlägt <em>Konstruktion.</em></p>
+      <p class="support">Ich glaube daran, dass man nicht immer alles auserzählen muss. Weniger ist manchmal mehr. Meine Arbeit liegt in der Entscheidung, was wegbleibt: im Spiel mit Licht und Material und im Fokus auf die wenigen Details, die die ganze Geschichte tragen.</p>
     </div>
   </div>
 </section>
